@@ -1,0 +1,37 @@
+.wrap > div {float: left;}
+.left_area {width: 250px; border-right: 1px solid #333; box-sizing: border-box;}
+.left_area > h1 {font-size: 22px; font-weight: bold; text-align: center; padding-top: 30px;}
+.left_area > p {font-size: 20px; text-align: center; margin-top: 5px; margin-bottom: 30px;}
+.left_area a:first-child {border-top:1px solid #333;}
+.left_area a {display: block; text-align: center; padding:15px 0; 
+	color: #333; text-decoration: none;
+	border-bottom: 1px solid #333;
+}
+.right_area {width: calc(100% - 250px); box-sizing: border-box; padding: 30px; position: relative;}
+#add_member {position: absolute; right: 30px; top: 40px;}
+.right_area h1{font-size: 22px; font-weight: bold; padding-bottom: 20px;}
+.members {width: 100%}
+.members th, .members td{
+	border: 1px solid #333;
+	height: 30px; padding: 0 10px; text-align: center;
+}
+.members th {padding-top: 10px;}
+.members td:nth-child(10) {width: 200px;}
+.members td:nth-child(10) span {
+	display: inline-block; width: 200px; white-space: nowrap; overflow: hidden;
+	text-overflow: ellipsis;
+}
+.member_regist_modal, .change_pwd_modal {
+	position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); z-index: 9; display:none;
+}
+.member_regist_modal.open, .change_pwd_modal.open {display: block;}
+.modal_content {
+	background-color: #fff;
+	position: absolute; left: 50%; top: 50%; margin-left: -160px; margin-top: -160px;
+	padding: 30px;
+}
+.modal_content h1{font-size: 32px; font-wieght: bold; margin-bottom: 30px}
+.modal_content span {display:inline-block; width: 80px; margin-bottom: 15px;}
+.input_row:last-child {text-align: center; margin-top: 20px;}
+.input_row button {padding:5px 30px;}
